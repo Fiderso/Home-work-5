@@ -1,9 +1,5 @@
 public class Main {
 
-    static int one;
-    static int two;
-    static int three;
-
     public static void main(String[] args) {
 
         byte people = 18; // Задача 1
@@ -27,7 +23,7 @@ public class Main {
         byte speed = 70; // Задача 3
         if (speed > 60) {
             System.out.println("Если скорость " + speed + ", то придется заплатить штраф.");
-        } else if (speed < 60) {
+        } else {
             System.out.println("Если скорость " + speed + ", то можно ездить спокойн.");
         }
 
@@ -60,7 +56,7 @@ public class Main {
         byte count = 67; // Задача 6
         byte oneRailcar = 102;
         byte mest = 60;
-        if (count > mest ) {
+        if (count < mest) {
             System.out.println("В вагоне есть сидячие места.");
         } else if (count < oneRailcar) {
             System.out.println("Сидячих мест нет, но есть стоячие места.");
@@ -70,7 +66,9 @@ public class Main {
 
         System.out.println();
 
-        // Задача 7
+        byte one = 1;
+        byte two = 2;
+        byte three = 3;
         if (one >= two && one >= three) {
             System.out.println(one);
         } else if (two >= one && two >= three) {
